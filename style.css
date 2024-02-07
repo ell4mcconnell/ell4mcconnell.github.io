@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/* CSS Document */
+#header {background-image: url('banner.jpg');  /* this is a rule. #header is the selector of type ID (#) */
+	background-size: contain; 	
+	background-position: 0 100%;
+	height: 300px;
+	max-height: 20vw; 			/* these are all properties with values.height=property, 200px=value*/
+	width: 96vw;
+	padding: 1vw;				/* 1000px x 400px*/
+	text-align: center; 
+	font-size:  10vw;
+	padding-top: 10vw; /*vertically align text*/
+	font-family: Luminari;
+	color: #4103fc;
+	border-style: solid;
+	/*box-sizing: border-box;*/ }
+	
+	.headerlink{color: #4103fc; text-decoration: none;}
+	.headerlink:hover {color: #FFF700;}
+
+#subheader { 	
+	background-position: 0 100%;
+	height: 50px; 			/* these are all properties with values.height=property, 200px=value*/
+	max-height: 4vw;
+	width: 96vw;
+	padding: 1vw;				/* 1000px x 400px*/
+	text-align: center; 
+	font-size:  2vw;
+	font-family: Luminari;
+	/*padding: 1vw;*/
+	color: #fff;
+	border-style: solid;
+	/*box-sizing: border-box; 	*/
+	background-color:#4103fc;
+	margin-top: 10px;}
+		
+#content {width: 100%; margin-top: 10px; margin-bottom: 10px; font-family: Arial;}
+		
+		.text-box,.right-sidebar,.image-home,.image-container {
+			border-style: solid;
+			border-width: 1px;
+			color: #4103fc;}
+
+		.text-box {  /*text on home page*/
+			color: #4103fc;
+			width: 35%;
+			float: left; 
+			font-size:  18px;
+			padding: 1vw;
+			margin-right: 1%;}
+
+		.right-sidebar {
+			color: #fff;
+			background-color:  #4103fc; 
+			width: 18%;   
+			display:inline-block;
+			right:0;
+			font-size:  4vw;
+			padding: 1vw;
+			border-width: 2px;
+			border-color:#FFF700;
+			border-style: solid;
+			text-align: center;
+			margin: 0 auto;}
+		
+		.image-home{
+			width: 39%;
+			max-height:80%;
+			float: left;
+			left: 0;
+			margin-right: 1%;
+			
+}
+		.image-home img{
+			/*color: #4103fc; overflow: hidden;
+			align-items: center;
+			justify-content: center;
+			display: block;*/
+			color: #4103fc;
+			width: 100%;
+			height: 100%;
+		
+			}
+		
+		.image-container{
+			width: 100%;
+			height: 20%;
+			}
+		
+		.image-container img{ 
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			
+			/*color: #4103fc;
+			overflow: hidden;
+			align-items: center;
+			justify-content: center;
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit:cover;*/
+			
+			/*transform: translate(-50%, -50%);*/
+			
+			}
+		
+		
+
+		.link {color: #fff; text-decoration: none;}
+		.link:hover {color: #FFF700;}
+		
+
+@media (max-width: 1160px) {
+    .text-box {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 767px) {
+    .text-box {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 670px) {
+    .text-box {
+		float: none;
+		width: 96vw;
+		margin-top: 5px;
+		padding: 1vw;
+		
+    }
+	.image-home {
+		float: none;
+		width: 100%;
+		height: 10vw;
+		margin-bottom: 5px;
+		
+		/*max-height:30vw;*/
+    }
+	.image-home img{ 
+		width: 100%;
+		height: 100%;
+		object-fit:cover;}
+	
+	.right-sidebar{
+		/*I guess no longer aptly named here*/
+		width: 96vw;
+		padding: 1vw;
+		margin-bottom: 5%;
+	
+	}
+}
+
+#footer {
+    background-color: #4103fc; /* Background color of the footer */
+	font-family: Luminari;
+    color: #fff; /* Text color */
+    padding: 2px; /* Padding around the content */
+    text-align: center; /* Align the content to the center */
+    position: fixed; /* or relative/absolute, depending on your layout */
+	left: 0;
+    bottom: 0; /* Stick the footer to the bottom of the viewport */
+    width: 100%; /* Take up the full width of the viewport */
+	border-style:solid;
+	border-color:#4103fc;
+	border-top-color: #fff;
+	border-width: 1px;
+}
+
+
+body {background-color:#fff; } 
